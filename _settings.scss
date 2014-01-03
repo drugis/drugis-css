@@ -1,5 +1,7 @@
 @import url("//fonts.googleapis.com/css?family=Droid+Sans:400,700");
 
+// http://colorschemedesigner.com/#4e32Po0pBw0w0
+
 // 
 // FOUNDATION SETTINGS
 //
@@ -59,10 +61,11 @@ $header-font-weight: 500;
 $drugis-color: #CC3333;
 $primary-color: #452F8C;
 // $secondary-color: #e7e7e7;
-$alert-color: lighten($drugis-color, 10%);
+$alert-color: #E66464;
 $success-color: #29A329;
-$warning-color: #E66464;
-$info-color: #7B63C6;
+$warning-color: lighten(#f08a24, 5%);
+//$warning-color: #E68787;
+//$info-color: #8F7DC6;
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
@@ -140,7 +143,7 @@ $info-color: #7B63C6;
 // We use these to control text style.
 // $alert-font-weight: normal;
 // $alert-font-size: rem-calc(13);
- $alert-font-color: #000;
+// $alert-font-color: #000;
 // $alert-font-color-alt: darken($secondary-color, 60%);
 
 // We use this for close hover effect.
