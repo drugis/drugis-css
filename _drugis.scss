@@ -82,6 +82,7 @@ h3 img {
 }
 
 /* ---------sticky footer --------------*/
+$sticky-footer-height: 4.5rem;
 * {
 	margin: 0;
 }
@@ -98,11 +99,11 @@ html, body {
 }
 
 .push {
-	height: 4rem;
+	height: $sticky-footer-height;
 }
 
 .footer {
-  height: 4.5rem;
+  height: $sticky-footer-height;
 }
 
 .footer, .push {
