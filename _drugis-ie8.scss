@@ -11,3 +11,12 @@
 .top-bar-section a {
 	padding: 10px;
 }
+
+div.warning {
+  background-color: $warning-color;
+}
+
+div.warning a {
+  color: white;
+  font-weight: bold;
+}
