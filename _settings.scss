@@ -1,8 +1,8 @@
-@import url("//fonts.googleapis.com/css?family=Droid+Sans:400,700");
+@import url("//fonts.googleapis.com/css?family=Droid+Sans:100,400,700");
 
 // http://colorschemedesigner.com/#4e32Po0pBw0w0
 
-// 
+//
 // FOUNDATION SETTINGS
 //
 
@@ -45,12 +45,12 @@ $code-color: #333;
 // $body-font-color: #222;
 $body-font-family: "Droid Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $body-font-weight: normal;
-//$header-font-family: $body-font-family;
-$header-font-weight: 500;
+$header-font-family: $body-font-family;
+$header-font-weight: 400;
 // $body-font-style: normal;
 
 // We use this to control font-smoothing
-// $font-smoothing: antialiased;
+$font-smoothing: antialiased;
 
 // We use these to control text direction settings
 // $text-direction: ltr;
