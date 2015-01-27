@@ -128,6 +128,14 @@ $header-font-weight: 400;
 $body-font-style: normal;
 
 // We use these as default colors throughout
+// $primary-color: #008CBA;
+// $secondary-color: #e7e7e7;
+// $alert-color: #f04124;
+// $success-color: #43AC6A;
+// $warning-color: #f08a24;
+// $info-color: #a0d3e8;
+
+// We use these as default colors throughout
 $drugis-color: #CC3333;
 $primary-color: #452F8C;
 // $secondary-color: #e7e7e7;
@@ -147,7 +155,7 @@ $warning-color: lighten(#f08a24, 5%);
 // $last-child-float: $opposite-direction;
 
 // We use these to make sure border radius matches unless we want it different.
-// $global-radius: 3px;
+$global-radius: 2px;
 // $global-rounded: 1000px;
 
 // We use these to control inset shadow shiny edges and depressions.
