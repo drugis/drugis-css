@@ -25,6 +25,10 @@ $addis-grey-border : $crumb-border-color;
   border-radius: 15px;
 }
 
+.inline-header {
+  display: inline;
+}
+
 .alert {
   color: $alert-color;
 }
