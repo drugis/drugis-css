@@ -1,17 +1,92 @@
+$addis-grey : $crumb-bg;
+$addis-grey-border : $crumb-border-color;
 #hero {
-	background: $drugis-color;
-	height: 420px;
-	text-align: left;
-	position: relative;
-	padding: 100px 20px 0 20px;
+  background: $drugis-color;
+  height: 420px;
+  text-align: left;
+  position: relative;
+  padding: 100px 20px 0 20px;
 }
 
+.color-stripe {
+  background: $drugis-color;
+  height: 0.45rem;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow:    0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  margin-botten: 1rem;
+}
+
+// header ////
+.user-image {
+  margin-top: -1px;
+  margin-right: 4px;
+  height: 32px;
+  border-radius: 15px;
+}
+
+.alert {
+  color: $alert-color;
+}
+.warning {
+  color: $warning-color;
+}
+.info {
+  color: darken($info-color, 10%);
+}
+
+.error-message {
+  display: block;
+  color: $drugis-color;
+}
+
+/// tables ///
+//////// Tables /////////////////
+table {
+  border-collapse: collapse;
+  //remove default foundation striping
+  tr:nth-of-type(even) {
+    background-color: transparent;
+  }
+  tr {
+    th.sortable {
+      cursor: pointer;
+    }
+    th, td {
+      border: solid 1px $addis-grey-border;
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+    td.button-cell {
+      text-align: center;
+      button {
+        margin-bottom: 0;
+        font-size: $table-row-font-size;
+      }
+    }
+  }
+}
+tr.clickable td {
+  color: $primary-color;
+}
+td.empty-cell {
+  background-color: $addis-grey-border;
+}
+// lighten the darken on hover
+tr.on-hover:hover {
+  background: darken($secondary-color, 0.5%);
+  cursor: pointer;
+  text-decoration: none;
+}
+//////////////
+
 #hero h1 {
-	font-size: 4em;
-	color: white;
-	font-weight: 500;
-	margin-bottom: 0;
-	line-height: 100%;
+  font-size: 4em;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 0;
+  line-height: 100%;
 }
 
 #hero h1 small {
@@ -19,87 +94,87 @@
 }
 
 #hero h4 {
-	font-size: 1.35em;
-	color: white;
-	font-weight: 300;
+  font-size: 1.35em;
+  color: white;
+  font-weight: 300;
 }
 
 header {
-	background: $drugis-color;
-	text-align: left;
-	position: relative;
-	padding: 25px 20px 35px 0px;
+  background: $drugis-color;
+  text-align: left;
+  position: relative;
+  padding: 25px 20px 35px 0px;
 }
 
 header h2 {
-	font-size: 3.5em;
-	color: white;
-	font-weight: 500;
-	margin-bottom: 0;
-	line-height: 100%;
+  font-size: 3.5em;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 0;
+  line-height: 100%;
 }
 
 header h4 {
-	color: white;
+  color: white;
 }
 
 header small {
-	color: white;
+  color: white;
 }
 
 .content {
-	padding-top: 20px;
+  padding-top: 20px;
 }
 
 h3 img {
-	float: right;
-	margin-right: 10px;
+  float: right;
+  margin-right: 10px;
 }
 
 .row-divider {
-	margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 .screen-shot {
-	border: 1px solid #dddddd;
-	padding: 4px;
-	margin: 0.5rem;
+  border: 1px solid #dddddd;
+  padding: 4px;
+  margin: 0.5rem;
 }
 
 .footer {
-	background: #333333;
-	padding: 24px 0 10px;
+  background: #333333;
+  padding: 24px 0 10px;
 }
 
 .footer a,
 .footer h4,
 .footer p  {
-	color: #666666
+  color: #666666
 }
 
 .footer a:hover {
-	color: #777777
+  color: #777777
 }
 
 /* ---------sticky footer --------------*/
 $sticky-footer-height: 4.5rem;
 * {
-	margin: 0;
+  margin: 0;
 }
 
 html, body {
-	height: 100%;
+  height: 100%;
 }
 
 .wrapper {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin: 0 auto -4rem;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4rem;
 }
 
 .push {
-	height: $sticky-footer-height;
+  height: $sticky-footer-height;
 }
 
 .footer {
@@ -107,16 +182,16 @@ html, body {
 }
 
 .footer, .push {
-	clear: both;
+  clear: both;
 }
 
 .copyright {
-	display: inline;
+  display: inline;
 }
 
 /* -------- end sticky footer---------*/
 #map_canvas {
-	height: 280px;
+  height: 280px;
 }
 
 /* standard */
