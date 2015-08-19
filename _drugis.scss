@@ -61,6 +61,7 @@ table {
     background-color: transparent;
   }
   tr {
+    height: 1rem;
     th.sortable {
       cursor: pointer;
     }
@@ -115,7 +116,6 @@ select option {
 }
 
 /////////////////////////// top nav bar
-.top-bar-section .has-form {
   height: 44px;
 }
 body.f-topbar-fixed {
