@@ -40,9 +40,17 @@ $addis-grey-border : $crumb-border-color;
   color: $drugis-color;
 }
 
+.alert-box-message {
+  padding-right: 1.25rem;
+}
+
 /// tables ///
 //////// Tables /////////////////
 table {
+    caption {
+    text-align: left;
+    font-weight: lighter;
+  }
   border-collapse: collapse;
   //remove default foundation striping
   tr:nth-of-type(even) {
@@ -51,6 +59,10 @@ table {
   tr {
     th.sortable {
       cursor: pointer;
+    }
+    th {
+      text-align: center;
+      background-color:#F5F5F5;
     }
     th, td {
       border: solid 1px $addis-grey-border;
@@ -80,6 +92,33 @@ tr.on-hover:hover {
   text-decoration: none;
 }
 //////////////
+
+.error-message {
+  display: block;
+  color: $drugis-color;
+}
+
+.application-link a{
+  text-decoration: underline;
+}
+
+// needed to show part below descender line
+input[type="number"],
+input[type="text"],
+select,
+select option {
+  line-height: 1.1rem;
+}
+
+/////////////////////////// top nav bar
+.top-bar-section .has-form {
+  height: 44px;
+}
+body.f-topbar-fixed {
+  padding-top: 4rem; // add space top top of first item under nav-bar
+}
+////// end top nav bar
+
 
 #hero h1 {
   font-size: 4em;
