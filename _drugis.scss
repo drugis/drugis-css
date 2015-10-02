@@ -1,5 +1,6 @@
 $addis-grey : $crumb-bg;
 $addis-grey-border : $crumb-border-color;
+$info-color-dark: darken($info-color, 10%);
 #hero {
   background: $drugis-color;
   height: 420px;
@@ -36,7 +37,7 @@ $addis-grey-border : $crumb-border-color;
   color: $warning-color;
 }
 .info {
-  color: darken($info-color, 10%);
+  color: $info-color-dark;
 }
 
 .error-message {
@@ -48,8 +49,7 @@ $addis-grey-border : $crumb-border-color;
   padding-right: 1.25rem;
 }
 
-/// tables ///
-//////// Tables /////////////////
+/* ---------tables --------------*/
 table {
     caption {
     text-align: left;
@@ -96,7 +96,7 @@ tr.on-hover:hover {
   cursor: pointer;
   text-decoration: none;
 }
-//////////////
+/* --------- end tables --------------*/
 
 .error-message {
   display: block;
@@ -115,12 +115,9 @@ select option {
   line-height: 1.1rem;
 }
 
-/////////////////////////// top nav bar
 body.f-topbar-fixed {
   padding-top: 4rem; // add space top top of first item under nav-bar
 }
-////// end top nav bar
-
 
 #hero h1 {
   font-size: 4em;
@@ -231,6 +228,38 @@ html, body {
 }
 
 /* -------- end sticky footer---------*/
+
+
+/* -------- sticky side nav ---------------- */
+#side-nav {
+  position: fixed;
+  ul {
+    list-style-type: none;
+    margin: 1rem 0rem;
+    
+
+    li {
+      padding: 0.5rem 0rem;
+      .heading,
+      a.heading {
+        color: #008CBA;
+        font-size: 0.77778rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 0;
+      }
+
+    }
+
+    li:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* -------- end sticky side nav ---------------- */
+
+
 #map_canvas {
   height: 280px;
 }
