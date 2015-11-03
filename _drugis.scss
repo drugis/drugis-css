@@ -266,4 +266,8 @@ inline-help {
 .joyride-content-wrapper a {
 	color: #008CBA; // trialverse header blue , todo make a decision on this 
 }
+
+body .joyride-tip-guide {
+  z-index: 1006 // one above the foundtion modal
+}
 /* -------- end inline help directive---------*/
