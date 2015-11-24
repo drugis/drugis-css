@@ -11,10 +11,6 @@ $addis-grey-border : $crumb-border-color;
 .color-stripe {
   background: $drugis-color;
   height: 0.45rem;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
-  -moz-box-shadow:    0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
-  margin-botten: 1rem;
 }
 
 // header ////
@@ -121,7 +117,7 @@ select option {
 
 /////////////////////////// top nav bar
 body.f-topbar-fixed {
-  padding-top: 4rem; // add space top top of first item under nav-bar
+  padding-top: 6rem; // add space top of first item under nav-bar
 }
 ////// end top nav bar
 
