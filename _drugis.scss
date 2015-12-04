@@ -48,6 +48,11 @@ navbar-directive ul li > a.manual:hover{
   padding-right: 1.25rem;
 }
 
+body.test {
+    background-image: url("../img/test.png");
+    background-repeat: repeat-x repeat-y;
+}
+
 /// tables ///
 //////// Tables /////////////////
 table {
