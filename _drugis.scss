@@ -277,7 +277,9 @@ inline-help {
 }
 
 body .joyride-tip-guide {
-  z-index: 1006 // one above the foundtion modal
+  z-index: 1006; // one above the foundtion modal
+  margin-top: -32px;
+  margin-left: -1.45rem !important; 
 }
 
 inline-help a {
