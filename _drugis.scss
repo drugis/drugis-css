@@ -105,6 +105,15 @@ tr.on-hover:hover {
   cursor: pointer;
   text-decoration: none;
 }
+
+table.layout-table {
+  border: none;
+  background-color: #F3F0FA;
+  td {
+    border: none;
+  }
+}
+
 //////////////
 
 .error-message {
@@ -279,7 +288,7 @@ inline-help {
 body .joyride-tip-guide {
   z-index: 1006; // one above the foundtion modal
   margin-top: -32px;
-  margin-left: -1.45rem !important; 
+  margin-left: -1.45rem !important;
 }
 
 inline-help a {
