@@ -136,7 +136,7 @@ $range-slider-disabled-opacity: 0.7 !default;
           bottom: -($range-slider-vertical-bar-height - $range-slider-handle-width);
         }
         .range-slider-active-segment {
-          width: $range-slider-bar-height - rem-calc((strip-unit($range-slider-bar-border-width) * 2));
+          width: $range-slider-bar-height - rem-calc((strip-unitName($range-slider-bar-border-width) * 2));
           height: auto;
           bottom: 0;
         }
@@ -157,7 +157,7 @@ $range-slider-disabled-opacity: 0.7 !default;
     .range-slider-active-segment {
       display: inline-block;
       position: absolute;
-      height: $range-slider-bar-height - rem-calc((strip-unit($range-slider-bar-border-width) * 2));
+      height: $range-slider-bar-height - rem-calc((strip-unitName($range-slider-bar-border-width) * 2));
       background: $range-slider-active-segment-bg-color;
     }
     .range-slider-handle {

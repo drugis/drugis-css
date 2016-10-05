@@ -41,8 +41,8 @@ $modules: () !default;
 }
 
 // STRIP UNIT
-// It strips the unit of measure and returns it
-@function strip-unit($num) {
+// It strips the unitName of measure and returns it
+@function strip-unitName($num) {
   @return $num / ($num * 0 + 1);
 }
 
@@ -89,7 +89,7 @@ $modules: () !default;
 
 // CONVERT TO REM
 @function convert-to-rem($value, $base-value: $rem-base)  {
-  $value: strip-unit($value) / strip-unit($base-value) * 1rem;
+  $value: strip-unitName($value) / strip-unitName($base-value) * 1rem;
   @if ($value == 0rem) { $value: 0; } // Turn 0rem into 0
   @return $value;
 }
