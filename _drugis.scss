@@ -91,6 +91,23 @@ table {
         font-size: $table-row-font-size;
       }
     }
+    td.input-cell {
+      padding: 0;
+      select,
+      input[type="number"] {
+       margin: 0;
+       border:0;
+       text-align: center;
+      }
+      select {
+        padding-right: 1rem;
+      }
+      input[type="number"].ng-invalid,
+      input[type="number"].ng-invalid-number,
+      input[type="number"].invalid-trialverse-number  {
+        background-color: lighten($alert-color, 10%);
+      }
+    }
   }
 }
 tr.clickable td {
