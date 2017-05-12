@@ -110,6 +110,11 @@ table {
     }
   }
 }
+tr.disabled-row td {
+  background: lightgrey;
+  color: #666;
+}
+
 tr.clickable td {
   color: $primary-color;
 }
