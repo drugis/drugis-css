@@ -139,9 +139,16 @@ tr.on-hover:hover {
 table.layout-table {
   border: none;
   background-color: #F3F0FA;
+  tbody {
+    background-color: #F3F0FA;
+  }
   td {
     border: none;
   }
+}
+
+.callout.primary {
+  background-color: #F3F0FA;
 }
 
 //////////////
@@ -163,12 +170,40 @@ select option {
 }
 
 /////////////////////////// top nav bar
-.menu a, .menu a:hover, .menu a:active {
+.menu a,
+.menu a:hover,
+.menu a:active {
   color: white;
 }
+
 .breadcrumbs {
   background: #f4f4f4;
   padding: 0.4rem 0.7rem;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button.info {
+  background-color: #a0d3e8;
+  border-color: #61b6d9;
+  color: #333333;
+}
+
+button.info:hover {
+  color: #FFFFFF;
+  background-color: #61b6d9;
+}
+
+.breadcrumbs.fixed {
+  margin-top: 57px;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 2px 4px rgba(0, 0, 0, 0.28);
+  border-bottom: 1px solod rgba(0, 0, 0, 0.14);
+  z-index: 50;
 }
 
 ////// end top nav bar
@@ -247,7 +282,18 @@ h3 img {
   color: #777777
 }
 
+.f-topbar-fixed {
+  margin-top: 32px;
+  padding-top: 4rem;
+}
 
+.fixed {
+  width: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
 
 
 
@@ -291,11 +337,15 @@ body {
 
 
 
+
+
 /* -------- end sticky footer---------*/
 
 #map_canvas {
   height: 280px;
 }
+
+
 
 
 
@@ -329,6 +379,8 @@ code {
 
 
 
+
+
 /* -------- inline help directive---------*/
 
 inline-help {
@@ -352,6 +404,8 @@ inline-help a {
 inline-help a:hover {
   color: darken(grey, 10%);
 }
+
+
 
 
 
