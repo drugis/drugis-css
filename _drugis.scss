@@ -1,5 +1,8 @@
-$addis-grey : $crumb-bg;
-$addis-grey-border : $crumb-border-color;
+@debug "loading drugis css";
+@include add-foundation-colors;
+
+$addis-grey: $light-gray;
+$addis-grey-border: $medium-gray;
 #hero {
   background: $drugis-color;
   height: 420px;
@@ -26,21 +29,23 @@ $addis-grey-border : $crumb-border-color;
 }
 
 .indent-one {
-  margin-left:2rem;
+  margin-left: 2rem;
 }
 
-navbar-directive ul li > a.manual:hover{
+navbar-directive ul li>a.manual:hover {
   text-decoration: underline;
 }
 
 .alert {
   color: $alert-color;
 }
+
 .warning {
   color: $warning-color;
 }
+
 .info {
-  color: darken($info-color, 10%);
+  color: darken(#A0D3E8, 10%);
 }
 
 .error-message {
@@ -53,19 +58,18 @@ navbar-directive ul li > a.manual:hover{
 }
 
 body.test {
-    background-image: url("../img/test.png");
-    background-repeat: repeat-x repeat-y;
+  background-image: url("../img/test.png");
+  background-repeat: repeat-x repeat-y;
 }
 
 /// tables ///
 //////// Tables /////////////////
 table {
-    caption {
+  caption {
     text-align: left;
     font-weight: lighter;
   }
-  border-collapse: collapse;
-  //remove default foundation striping
+  border-collapse: collapse; //remove default foundation striping
   tr:nth-of-type(even) {
     background-color: transparent;
   }
@@ -76,9 +80,10 @@ table {
     }
     th {
       text-align: center;
-      background-color:#F5F5F5;
+      background-color: #F5F5F5;
     }
-    th, td {
+    th,
+    td {
       border: solid 1px $addis-grey-border;
       a:hover {
         text-decoration: underline;
@@ -88,28 +93,29 @@ table {
       text-align: center;
       button {
         margin-bottom: 0;
-        font-size: $table-row-font-size;
+        font-size: $global-font-size;
       }
     }
     td.input-cell {
       padding: 0;
       select,
       input[type="number"] {
-       margin: 0;
-       border:0;
-       text-align: center;
+        margin: 0;
+        border: 0;
+        text-align: center;
       }
       select {
         padding-right: 1rem;
       }
       input[type="number"].ng-invalid,
       input[type="number"].ng-invalid-number,
-      input[type="number"].invalid-trialverse-number  {
+      input[type="number"].invalid-trialverse-number {
         background-color: lighten($alert-color, 10%);
       }
     }
   }
 }
+
 tr.disabled-row td {
   background: lightgrey;
   color: #666;
@@ -118,9 +124,11 @@ tr.disabled-row td {
 tr.clickable td {
   color: $primary-color;
 }
+
 td.empty-cell {
   background-color: $addis-grey-border;
 }
+
 // lighten the darken on hover
 tr.on-hover:hover {
   background: darken($secondary-color, 0.5%);
@@ -137,13 +145,12 @@ table.layout-table {
 }
 
 //////////////
-
 .error-message {
   display: block;
   color: $drugis-color;
 }
 
-.application-link a{
+.application-link a {
   text-decoration: underline;
 }
 
@@ -156,12 +163,15 @@ select option {
 }
 
 /////////////////////////// top nav bar
-body.f-topbar-fixed {
-  padding-top: 4rem; 
+.menu a, .menu a:hover, .menu a:active {
+  color: white;
 }
+.breadcrumbs {
+  background: #f4f4f4;
+  padding: 0.4rem 0.7rem;
+}
+
 ////// end top nav bar
-
-
 #hero h1 {
   font-size: 4em;
   color: white;
@@ -229,7 +239,7 @@ h3 img {
 
 .footer a,
 .footer h4,
-.footer p  {
+.footer p {
   color: #666666
 }
 
@@ -237,13 +247,19 @@ h3 img {
   color: #777777
 }
 
+
+
+
+
 /* ---------sticky footer --------------*/
+
 $sticky-footer-height: 4.5rem;
 * {
   margin: 0;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -262,7 +278,8 @@ html, body {
   height: $sticky-footer-height;
 }
 
-.footer, .push {
+.footer,
+.push {
   clear: both;
 }
 
@@ -270,18 +287,28 @@ html, body {
   display: inline;
 }
 
+
+
+
+
 /* -------- end sticky footer---------*/
+
 #map_canvas {
   height: 280px;
 }
 
+
+
+
+
 /* standard */
+
 pre {
   margin-bottom: $paragraph-margin-bottom;
   border: 1px solid darken($secondary-color, 20%);
   background-color: $secondary-color;
   padding: 0.8em;
-  font-size: $paragraph-font-size;
+  font-size: $global-font-size;
   overflow-x: auto;
 }
 
@@ -298,13 +325,18 @@ code {
 }
 
 
+
+
+
+
 /* -------- inline help directive---------*/
+
 inline-help {
   margin: 1rem;
 }
 
 .joyride-content-wrapper a {
-	color: #008CBA; // trialverse header blue , todo make a decision on this
+  color: #008CBA; // trialverse header blue , todo make a decision on this
 }
 
 body .joyride-tip-guide {
@@ -320,6 +352,10 @@ inline-help a {
 inline-help a:hover {
   color: darken(grey, 10%);
 }
+
+
+
+
 
 /* -------- end inline help directive---------*/
 
