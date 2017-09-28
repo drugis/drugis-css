@@ -181,6 +181,10 @@ select option {
   padding: 0.4rem 0.7rem;
 }
 
+.bar-padding {
+  padding-top: 0.61rem;
+  padding-bottom: 0.61rem;
+}
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -295,8 +299,6 @@ h3 img {
   z-index: 99;
 }
 
-
-
 /* ---------sticky footer --------------*/
 
 $sticky-footer-height: 4.5rem;
@@ -333,23 +335,11 @@ body {
   display: inline;
 }
 
-
-
-
-
-
-
 /* -------- end sticky footer---------*/
 
 #map_canvas {
   height: 280px;
 }
-
-
-
-
-
-
 
 /* standard */
 
