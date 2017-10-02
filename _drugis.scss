@@ -1,4 +1,3 @@
-@debug "loading drugis css";
 @include add-foundation-colors;
 
 $addis-grey: $light-gray;
@@ -388,6 +387,8 @@ inline-help a:hover {
   background-color: #333333;
   font-size: 100%;
   line-height: 1.3;
+  margin-left: -1rem !important;
+  padding: 1.5rem;
 }
 .tooltip a {
   color:#008CBA;
@@ -398,9 +399,16 @@ inline-help a:hover {
     border-top-color: transparent !important;
     border-left-color: transparent !important;
     border-right-color: transparent !important;
-    left:140px;
 }
-
+.tooltip.top::before {
+    border-top-style: solid;
+    border-color: #333333;
+    top: 100%;
+    border-top-color: #333333;
+    border-right-color: transparent !important;
+    border-bottom-color: transparent !important;
+    border-left-color: transparent !important;
+}
 /* -------- end inline help directive---------*/
 
 .reveal-modal {
