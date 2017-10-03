@@ -35,6 +35,10 @@ navbar-directive ul li>a.manual:hover {
   text-decoration: underline;
 }
 
+.menu a.manual {
+  line-height:2rem;
+}
+
 .alert {
   color: $alert-color;
 }
