@@ -363,3 +363,15 @@ inline-help a:hover {
   overflow-x: auto;
   min-width: 540px;
 }
+
+.tooltip-content {
+  max-height:300px;
+  overflow-y: auto;
+}
+
+
+.has-tip {
+  border-bottom: none
+}
+
+
