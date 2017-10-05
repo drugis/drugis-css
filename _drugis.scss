@@ -10,6 +10,10 @@ $addis-grey-border: $medium-gray;
   padding: 100px 20px 0 20px;
 }
 
+.right {
+  float:right;
+}
+
 .color-stripe {
   background: $drugis-color;
   height: 0.25rem;
@@ -37,6 +41,10 @@ a.manual:hover {
 
 .menu a.manual {
   line-height:2rem;
+}
+
+a.manual:visited {
+  color: $white;
 }
 
 .alert {
