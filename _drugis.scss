@@ -187,7 +187,7 @@ table.layout-table {
 }
 
 .callout.primary {
-  background-color: #f2f2f2;
+  background-color: #F3F0FA;
   color: #333333
 }
 
@@ -390,7 +390,7 @@ body {
 pre {
   margin-bottom: $paragraph-margin-bottom;
   border: 1px solid darken($secondary-color, 20%);
-  background-color: $secondary-color;
+  background-color: $light-gray;
   padding: 0.8em;
   font-size: $global-font-size;
   overflow-x: auto;
@@ -412,7 +412,7 @@ code {
 /* -------- inline help directive---------*/
 
 inline-help {
-  margin: 1rem;
+  margin: 0.1rem;
 }
 
 inline-help a {
