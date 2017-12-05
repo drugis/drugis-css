@@ -127,6 +127,30 @@ table {
   }
 }
 
+
+.legend-table tbody {
+  border: none;
+}
+
+.legend-table td {
+  background: #333333;
+  border: none;
+}
+
+table tr td.input-cell-leftpad {
+  margin: 0;
+  padding: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+table tr td.input-cell input[type="text"] {
+  margin: 0;
+  padding: 0;
+  padding-left:0.5rem;
+}
+
+
 tr.disabled-row td {
   background: lightgrey;
   color: #666;
@@ -156,6 +180,10 @@ table.layout-table {
   td {
     border: none;
   }
+}
+
+.noborder {
+  border: none;
 }
 
 .callout.primary {
