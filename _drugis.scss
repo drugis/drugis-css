@@ -461,9 +461,14 @@ inline-help a:hover {
   overflow-y: auto;
 }
 
-
 .has-tip {
   border-bottom: none
 }
 
+.tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+  background: #fefefe;
+}
 
+.tabs-title > a {
+  background: #e6e6e6;
+}
