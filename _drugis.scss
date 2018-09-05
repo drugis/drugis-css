@@ -469,34 +469,30 @@ inline-help a:hover {
   background: #fefefe;
 }
 
+ul.tabs {
+  border-left:0;
+  border-right: 0;
+  border-top: 0;
+}
+
+li.tabs-title.is-active {
+  margin-bottom: -1px;
+  border-bottom: 1px solid white;
+}
+
 .tabs-title > a {
-  background: #e6e6e6;
+  background: #efefef;
   border: 1px solid;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  border-color: black;
-  border-bottom: none;
+  border-color: #e6e6e6;
+  border-bottom: 0;
  }
 
 .tabs-title {
   margin-bottom: -2px;
-  border-bottom: 1px solid white;
-}
-
-li.disabled {
-  background: #e6e6e6;
-  border: 1px solid;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  padding-top: 17px;
-  padding-bottom: 6px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-color: black;
-  border-bottom: none;
-  font-size: 0.75rem;
-  color: darkgray;
+  border-bottom: 1px solid #e6e6e6;
 }
