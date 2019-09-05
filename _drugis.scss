@@ -496,3 +496,8 @@ li.tabs-title.is-active {
   margin-bottom: -2px;
   border-bottom: 1px solid #e6e6e6;
 }
+
+th.resizableColumn {
+  resize: horizontal;
+  overflow: auto;
+}
