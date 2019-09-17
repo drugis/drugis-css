@@ -496,5 +496,14 @@ li.tabs-title.is-active {
 
 th.resizableColumn {
   resize: horizontal;
-  overflow: auto;
+  overflow: hidden;
+  min-width: inherit;
+  min-height: 100%;
+}
+
+div.resizableColumn {
+  resize: horizontal;
+  overflow: hidden;
+  min-width: 100%;
+  min-height: 100%;
 }
