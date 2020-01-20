@@ -472,26 +472,30 @@ ul.tabs {
   border-top: 0;
 }
 
-li.tabs-title.is-active {
-  margin-bottom: -1px;
-  border-bottom: 1px solid white;
-}
-
-.tabs-title > a {
-  background: #efefef;
+.tab-common {
   border: 1px solid;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  padding-bottom: 10px;
+  padding-top: 17px;
+  padding-bottom: 6px;
   padding-left: 20px;
   padding-right: 20px;
   border-color: #e6e6e6;
-  border-bottom: 0;
- }
+  font-size: 0.75rem;
+}
 
-.tabs-title {
-  margin-bottom: -2px;
+.tab-is-active {
+  background: white;
+  border-bottom: none;
+}
+
+.tab-is-inactive {
+  background: #efefef;
   border-bottom: 1px solid #e6e6e6;
+  cursor: pointer;
+  color: #1976D2
+}
+
+.tab-is-inactive:hover {
+  background: white;
 }
 
 th.resizableColumn {
@@ -506,22 +510,4 @@ div.resizableColumn {
   overflow: hidden;
   min-width: 100%;
   min-height: 100%;
-}
-
-input.username {
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  height: 2.4375rem;
-  margin: 0 0 1rem;
-  padding: .5rem;
-  border: 1px solid #cacaca;
-  border-radius: 2px;
-  background-color: #fefefe;
-  box-shadow: inset 0 1px 2px rgba(10,10,10,.1);
-  font-family: inherit;
-  font-size: 1rem;
-  font-weight: 400;
-  color: #0a0a0a;
-  transition: box-shadow .5s,border-color .25s ease-in-out;
 }
